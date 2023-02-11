@@ -1,8 +1,8 @@
 
 babylond init $MONIKER --chain-id bbn-test-1
-wget https://github.com/babylonchain/networks/blob/main/bbn-test1/genesis.tar.bz2
-tar -xjf genesis.tar.bz2 && rm genesis.tar.bz2
-mv genesis.json ~/.babylond/config/genesis.json
+# wget https://github.com/babylonchain/networks/blob/main/bbn-test1/genesis.tar.bz2
+# tar -xjf genesis.tar.bz2 && rm genesis.tar.bz2
+wget https://raw.githubusercontent.com/demondvn/babylon-node/main/genesis.json -O ~/.babylond/config/genesis.json
 
 wget -O $HOME/.babylond/config/addrbook.json "https://share2.utsa.tech/babylon/addrbook.json"
 
