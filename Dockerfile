@@ -7,4 +7,5 @@ RUN make install
 ARG MONIKER
 COPY script.sh script.sh
 RUN chmod +x script.sh
-CMD $(which babylond) start
+
+CMD ./script.sh && $(which babylond) start
