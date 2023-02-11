@@ -15,7 +15,7 @@ PEERS="88bed747abef320552d84d02947d0dd2b6d9c71c@babylon-testnet.nodejumper.io:44
 sed -i 's|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.babylond/config/config.toml
 
 SEEDS="03ce5e1b5be3c9a81517d415f65378943996c864@18.207.168.204:26656,a5fabac19c732bf7d814cf22e7ffc23113dc9606@34.238.169.221:26656"
-sed -i.bak -e "s/^seeds =.*/seeds = \"$seeds\"/" $HOME/.babylond/config/config.toml
+sed -i.bak -e "s/^seeds =.*/seeds = \"$SEEDS\"/" $HOME/.babylond/config/config.toml
 
 pruning="custom"
 pruning_keep_recent="1000"
