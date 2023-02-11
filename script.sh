@@ -4,7 +4,7 @@ babylond init $MONIKER --chain-id bbn-test-1
 # tar -xjf genesis.tar.bz2 && rm genesis.tar.bz2
 wget https://raw.githubusercontent.com/demondvn/babylon-node/main/genesis.json -O ~/.babylond/config/genesis.json
 
-wget -O $HOME/.babylond/config/addrbook.json "https://share2.utsa.tech/babylon/addrbook.json"
+wget -O $HOME/.babylond/config/addrbook.json "https://snapshots-testnet.nodejumper.io/babylon-testnet/addrbook.json"
 
 external_address=$(wget -qO- eth0.me)
 sed -i.bak -e "s/^external_address *=.*/external_address = \"$external_address:26656\"/" $HOME/.babylond/config/config.toml
