@@ -8,4 +8,4 @@ ARG MONIKER
 COPY script.sh script.sh
 RUN chmod +x script.sh
 
-CMD ./script.sh && $(which babylond) start && sleep infinity
+CMD ./script.sh && $(which babylond) start || sleep infinity
