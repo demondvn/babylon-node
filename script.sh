@@ -1,5 +1,6 @@
 
-babylond init $MONIKER --chain-id bbn-test-1
+babylond init $MONIKER
+babylond config chain-id bbn-test-1
 babylond keys add wallet --algo secp256k1 --coin-type 118
 # wget https://github.com/babylonchain/networks/blob/main/bbn-test1/genesis.tar.bz2
 # tar -xjf genesis.tar.bz2 && rm genesis.tar.bz2
